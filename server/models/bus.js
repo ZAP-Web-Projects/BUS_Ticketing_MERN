@@ -7,21 +7,21 @@ const BusSchema = new mongoose.Schema({
     },
     bus_name: {
         type: String,
-        required: flase
+        required: false
     },
     bus_type: {
         type: String,
         required: true
     },
-    from:{
+    from: {
         type: String,
         required: true
     },
-    to:{
+    to: {
         type: String,
         required: true
     },
-    seat_qty:{
+    seat_qty: {
         type: Number,
         required: true
     }
