@@ -1,6 +1,7 @@
 // Configure Express
 const express = require('express');
 const app = express();
+app.use(express.json({ extended: false }));
 
 // Configure Cors
 var cors = require('cors');
