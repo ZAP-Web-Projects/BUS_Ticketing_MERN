@@ -17,10 +17,13 @@ connectDB();
 // Load Routes
 const bus = require ('./routes/bus_routes');
 const ticket = require ('./routes/ticket_routes');
+const places = require('./routes/place_routes');
 
 
 // Initialize Routes
 app.use('/bus', bus);
+app.use('/ticket', ticket);
+app.use('/places', places);
 
 // Listening to PORT defined in the .env file
 app.listen(process.env.PORT, () => console.log('SERVER RUNNING ON PORT : ' + process.env.PORT));

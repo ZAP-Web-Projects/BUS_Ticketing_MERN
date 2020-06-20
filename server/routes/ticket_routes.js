@@ -20,7 +20,7 @@ router.post('/', (req, res) => {
 
 // UPDATE A TICKET
 router.put('/update/:id', (req, res) => {
-    Ticket.findByIdAndUpdate(req.params.id)
+    Ticket.findByIdAndUpdate(req.params.id, req.body)
         .then(res.sendStatus(200))
         .catch(err => res.sendStatus(404).json(err));
 })

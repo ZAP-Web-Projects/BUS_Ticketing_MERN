@@ -6,3 +6,5 @@ const Places = new mongoose.Schema({
         required: true
     }
 })
+
+module.exports = mongoose.model('Places', Places);

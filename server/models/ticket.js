@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 
 const TicketSchema = new mongoose.Schema({
+    user_id:{
+        type: String,
+        required: true
+    },
     date_issued: {
         type: Date,
         required: true
@@ -31,4 +35,4 @@ const TicketSchema = new mongoose.Schema({
     }
 })
 
-module.exports = mongoose, model('Ticket', TicketSchema);
+module.exports = mongoose.model('Ticket', TicketSchema);
