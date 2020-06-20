@@ -16,6 +16,8 @@ connectDB();
 
 // Load Routes
 const bus = require ('./routes/bus_routes');
+const ticket = require ('./routes/ticket_routes');
+
 
 // Initialize Routes
 app.use('/bus', bus);
